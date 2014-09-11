@@ -3,8 +3,6 @@ Rails.application.routes.draw do
   get 'login', to: 'sessions#new', as: 'login'
   get 'logout', to: 'sessions#destroy', as: 'logout'
 
-  resources :sessions
-  resources :users
 
   root to: "users#index"
 
@@ -15,4 +13,6 @@ Rails.application.routes.draw do
   end
 
   resources :comments
+
+  resources :sessions
 end
