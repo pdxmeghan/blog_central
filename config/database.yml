@@ -1,0 +1,8 @@
+development:
+  adapter: postgresql
+  database: blog_central_development
+
+test:
+  adapter: postgresql
+  database: blog_central_development
+
