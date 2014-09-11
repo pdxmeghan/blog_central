@@ -1,1 +1,6 @@
 <h1><%= @user.name %></h1>
+
+<% if current_user == @user %>
+  <%= link_to "Edit My Info", edit_user_path(@user) %> |
+  <%= link_to "Delete My Account", user_path(@user), :data => {:confirm => "Are you sure?", :method => "delete"} %>
+<% end %>
