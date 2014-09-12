@@ -1,0 +1,9 @@
+<div class="entry-title"><h1><%= @entry.title %></h1></div>
+<p><%= @entry.content %></p>
+<br>
+<% if current_user.id == @user.id %>
+  <%= link_to "Edit Entry", edit_user_entry_path(@user, @entry) %> |
+  <%= link_to "Delete Entry", user_entry_path(@user, @entry), :data => {:confirm => "Are you sure?", :method => "delete"} %>
+<% end %>
+<br>
+<br><%= link_to "Home Page", users_path %>

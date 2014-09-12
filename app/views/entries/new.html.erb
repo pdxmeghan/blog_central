@@ -1,0 +1,15 @@
+<h1>Create a new entry in your blog</h1>
+
+
+<%= form_for [@user, @entry] do |f| %>
+<%= render('layouts/errors', :object => @entry) %>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :content %><br />
+    <%= f.text_area :content, :cols => "60", :rows => "20" %>
+  </div>
+  <%= f.submit "Publish Entry" %>
+<% end %>

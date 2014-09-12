@@ -1,6 +1,13 @@
 <h1><%= @user.name %></h1>
 
 <% if current_user == @user %>
+  <%= link_to "Create New Entry", new_user_entry_path(@user) %> |
   <%= link_to "Edit My Info", edit_user_path(@user) %> |
   <%= link_to "Delete My Account", user_path(@user), :data => {:confirm => "Are you sure?", :method => "delete"} %>
 <% end %>
+
+<ul>
+  <% @entries.each do |entry| %>
+    <li><%= link_to entry.title, user_entry_path(@user, entry) %></li>
+  <% end %>
+</ul>
