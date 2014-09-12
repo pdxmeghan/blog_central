@@ -21,7 +21,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    @entries = Entry.where(:user_id == @user.id)
+    @entries = @user.entries
   end
 
   def edit
