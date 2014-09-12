@@ -6,7 +6,7 @@ Comments for this entry:
 
 <ul>
   <% @entry.comments.each do |comment| %>
-    <li><%= comment.text %>
+    <li><%= comment.text %> | Submitted by <%= comment.user.name %>
       <% if  current_user %>
         <% if current_user.id == comment.user_id %>
           | <%= link_to "Edit", edit_comment_path(comment) %> |

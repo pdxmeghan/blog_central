@@ -17,7 +17,7 @@
     <%= link_to "Log In", login_path %>
    <% end %>
 </div>
-
+<%= flash[:notice] %>
 <%= yield %>
 
 </body>

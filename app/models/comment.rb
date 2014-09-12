@@ -6,4 +6,8 @@ class Comment < ActiveRecord::Base
   belongs_to :user
 end
 
+def self.author
+  author = User.where(:id == comment.user_id)
+  author
+end
 
