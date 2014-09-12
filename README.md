@@ -34,11 +34,9 @@ $ rails s
 ```
 It should now be available at `localhost:3000`.
 
-Alternatively, the live app is on [Heroku](http://photobook-app.herokuapp.com/).
+Alternatively, the live app is on [Heroku](http://blog-central.herokuapp.com/).
 
-##Authors
-[Josie](https://github.com/jozwright)
-and
+##Author
 [Meghan](https://github.com/pdxmeghan)
 
 ##License
