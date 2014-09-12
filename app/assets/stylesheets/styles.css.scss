@@ -1,0 +1,58 @@
+.container-fluid {
+  background-color: #E5F2FF;
+}
+
+.user-header {
+  text-align: center;
+  font-size: 20px;
+  color: #25578A;
+}
+
+.title {
+  text-align:center;
+  font-size: 40px;
+  text-decoration: underline;
+  color: #25578A;
+}
+
+ul {
+  margin-left: 250px;
+}
+
+li {
+  padding: 5px;
+  font-size: 25px;
+}
+
+.user-links {
+  text-align: center;
+  margin-top: -10px;
+}
+
+.comment-content {
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.comment-ul {
+  display:block;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 20px;
+}
+
+.comment-li {
+  font-size: 15px;
+}
+
+.comment-form {
+  text-align:center;
+}
+
+.home-link {
+  text-align: center;
+}
+
+.entry-links {
+  text-align: center;
+}
