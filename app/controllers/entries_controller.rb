@@ -1,6 +1,5 @@
 class EntriesController < ApplicationController
-  def index
-  end
+  before_filter :authorize, only: [:edit, :update, :destroy]
 
   def new
     @user = User.find(params[:user_id])

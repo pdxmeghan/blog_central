@@ -1,24 +1,23 @@
-<div class="entry-title"><h1><%= @entry.title %></h1></div>
-<p><%= @entry.content %></p>
+<div class="title"><h1><%= @entry.title %></h1></div>
+<div class="comment-content"><p><%= @entry.content %></p></div>
 <br>
 
-Comments for this entry:
-
-<ul>
+<ul><div class="comment-ul">Comments for this entry:
   <% @entry.comments.each do |comment| %>
-    <li><%= comment.text %> | Submitted by <%= comment.user.name %>
+    <li><div class="comment-li"><%= comment.text %> | Submitted by <%= comment.user.name %>
       <% if  current_user %>
         <% if current_user.id == comment.user_id %>
           | <%= link_to "Edit", edit_comment_path(comment) %> |
           <%= link_to "Delete", comment_path(comment), :data => {:confirm => "Are you sure?", :method => "delete"} %>
           <% end %>
       <% end %>
-    </li>
+    </div></li>
   <% end %>
+</div>
 </ul>
 
-
 <br>
+<div class="comment-form">
 <% if current_user %>
   <%= form_for @comment do |f| %>
     <div class = "field">
@@ -30,11 +29,14 @@ Comments for this entry:
     <%= f.submit "Submit Comment" %>
   <% end %>
 <% end %>
+</div>
 
 <br>
+<div class = "entry-links">
 <% if current_user == @user %>
   <%= link_to "Edit Entry", edit_user_entry_path(@user, @entry) %> |
   <%= link_to "Delete Entry", user_entry_path(@user, @entry), :data => {:confirm => "Are you sure?", :method => "delete"} %>
 <% end %>
+</div>
 <br>
-<br><%= link_to "Home Page", users_path %>
+

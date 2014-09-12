@@ -6,8 +6,8 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-<div id="user_header">
+<body class = "container-fluid">
+<div class="user-header">
   <%= link_to "Home", root_url %>
   <% if current_user %>
     Logged in as <%= current_user.name %>.
@@ -17,8 +17,10 @@
     <%= link_to "Log In", login_path %>
    <% end %>
 </div>
+
 <%= flash[:notice] %>
 <%= yield %>
-
+<br>
+<div class="home-link"><%= link_to "Home Page", users_path %></div>
 </body>
 </html>

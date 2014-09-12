@@ -1,6 +1,5 @@
 class CommentsController < ApplicationController
-  def index
-  end
+  before_filter :authorize, only: [:edit, :update, :destroy]
 
   def new
     @comment = Comment.new
@@ -10,7 +9,7 @@ class CommentsController < ApplicationController
     @comment = Comment.new(comment_params)
     if @comment.save
       session[:comment_id] = @comment.id
-      redirect_to root_url
+      redirect_to user_entry_path(@comment.user, @comment.entry)
     else
       render 'new'
     end
@@ -25,7 +24,7 @@ class CommentsController < ApplicationController
     @comment.update(comment_params)
     if @comment.valid?
       flash[:notice] = "Your comment has been updated"
-      redirect_to root_url
+      redirect_to user_entry_path(@comment.user, @comment.entry)
     else
       render 'edit'
     end

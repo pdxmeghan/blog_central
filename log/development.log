@@ -18883,3 +18883,2359 @@ Processing by EntriesController#show as HTML
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
   [1m[35mCACHE (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
 Completed 200 OK in 2825ms (Views: 2783.2ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 10:35:27 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (6.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 96ms (Views: 92.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 10:35:42 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.3ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (5.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 133ms (Views: 130.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 10:36:03 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (6.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 124ms (Views: 119.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 10:39:15 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.3ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (6.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 91ms (Views: 87.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 10:39:39 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.4ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (5.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 116ms (Views: 112.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 10:43:17 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.2ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (5.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 101ms (Views: 97.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 10:43:37 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (6.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 92ms (Views: 88.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 10:44:08 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.2ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (6.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 133ms (Views: 130.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 10:46:12 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (7.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 110ms (Views: 106.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 10:46:27 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.2ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (5.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 102ms (Views: 99.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 10:46:59 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (5.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 123ms (Views: 119.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 10:47:08 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.2ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (5.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 101ms (Views: 97.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 10:50:41 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (6.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 85ms (Views: 82.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 10:52:20 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.2ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (5.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 110ms (Views: 106.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 10:52:22 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (6.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 114ms (Views: 110.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 10:52:41 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.2ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (6.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 87ms (Views: 84.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 10:53:08 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (6.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 101ms (Views: 97.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 10:55:05 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.2ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (5.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 98ms (Views: 95.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 10:58:57 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (5.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1444ms (Views: 1440.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:01:52 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.3ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (6.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 94ms (Views: 89.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:03:01 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (5.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 112ms (Views: 108.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:04:52 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.3ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (6.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1586ms (Views: 1582.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:06:41 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (6.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1625ms (Views: 1622.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:06:42 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.2ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (7.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 105ms (Views: 101.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:06:59 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (6.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1611ms (Views: 1608.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:07:00 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.3ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (6.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 137ms (Views: 133.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:07:05 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (5.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1608ms (Views: 1604.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:07:06 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.2ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (7.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 114ms (Views: 110.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:09:33 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.9ms)
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 104ms (Views: 102.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:09:46 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mEntry Load (0.3ms)[0m  SELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (5.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 228ms (Views: 221.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:11:51 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1716ms (Views: 1714.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:11:53 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.4ms)
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 118ms (Views: 116.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:12:24 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (3.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1645ms (Views: 1642.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:12:26 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (3.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 113ms (Views: 109.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:16:00 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (3.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 175ms (Views: 172.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:16:03 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (7.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 91ms (Views: 87.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:16:06 -0700
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (2.7ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 94ms (Views: 89.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:18:10 -0700
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1652ms (Views: 1650.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:18:12 -0700
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 161ms (Views: 158.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:18:18 -0700
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1650ms (Views: 1648.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:18:23 -0700
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 131ms (Views: 129.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:18:24 -0700
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 93ms (Views: 91.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:18:30 -0700
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1720ms (Views: 1718.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:18:45 -0700
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1632ms (Views: 1630.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:18:54 -0700
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1670ms (Views: 1667.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:19:02 -0700
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1741ms (Views: 1739.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:19:19 -0700
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1684ms (Views: 1682.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:19:40 -0700
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1703ms (Views: 1700.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:19:47 -0700
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1752ms (Views: 1749.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:20:40 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1[0m  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (2.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 126ms (Views: 123.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:21:56 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1[0m  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (3.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1718ms (Views: 1715.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:22:12 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1[0m  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (2.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 107ms (Views: 104.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:22:25 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1[0m  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (3.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1703ms (Views: 1699.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:22:37 -0700
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.4ms)
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 116ms (Views: 114.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:22:40 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1[0m  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (2.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 108ms (Views: 105.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:22:41 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.2ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (6.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 122ms (Views: 118.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:23:10 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mEntry Load (0.3ms)[0m  SELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (5.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 114ms (Views: 111.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:23:30 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (2.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1708ms (Views: 1705.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:23:37 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (2.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1676ms (Views: 1673.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:23:45 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (2.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1658ms (Views: 1654.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:24:34 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mEntry Load (0.3ms)[0m  SELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (3.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1730ms (Views: 1716.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:24:56 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (2.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1720ms (Views: 1717.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:25:17 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (2.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1743ms (Views: 1739.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:25:51 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (2.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1733ms (Views: 1730.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:26:10 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (3.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1629ms (Views: 1626.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:26:41 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mEntry Load (0.3ms)[0m  SELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (4.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1653ms (Views: 1649.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:27:04 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (2.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1716ms (Views: 1713.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:27:13 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (6.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 110ms (Views: 106.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:27:22 -0700
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (2.5ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (4.2ms)
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 119ms (Views: 115.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:27:32 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1[0m  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (2.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1642ms (Views: 1639.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:27:39 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1[0m  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (3.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1656ms (Views: 1653.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:27:49 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1[0m  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (2.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1724ms (Views: 1721.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:28:04 -0700
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 114ms (Views: 112.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:29:30 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1[0m  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (2.7ms)
+  [1m[35mCACHE (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1662ms (Views: 1660.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:30:27 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1[0m  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (3.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1731ms (Views: 1728.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:30:32 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1[0m  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (2.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 104ms (Views: 100.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:30:41 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1[0m  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (2.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1755ms (Views: 1752.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:31:07 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1[0m  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (2.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1704ms (Views: 1700.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:32:06 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1[0m  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (2.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1635ms (Views: 1632.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:32:25 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1[0m  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (2.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1632ms (Views: 1629.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:32:53 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1[0m  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (2.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1709ms (Views: 1706.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/7/entries/new" for 127.0.0.1 at 2014-09-12 11:33:11 -0700
+Processing by EntriesController#new as HTML
+  Parameters: {"user_id"=>"7"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  Rendered layouts/_errors.html.erb (0.6ms)
+  Rendered entries/new.html.erb within layouts/application (19.1ms)
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 124ms (Views: 121.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:33:15 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.2ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (6.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 123ms (Views: 119.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:34:11 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (7.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 122ms (Views: 119.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:34:43 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.2ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (6.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1721ms (Views: 1718.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:35:07 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (9.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 117ms (Views: 113.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:35:35 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.2ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (5.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1710ms (Views: 1707.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:37:43 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (7.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1730ms (Views: 1725.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:37:57 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.3ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (6.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1729ms (Views: 1725.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:38:05 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (6.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1729ms (Views: 1725.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:38:37 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.3ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (7.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 132ms (Views: 127.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:38:58 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (5.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1796ms (Views: 1793.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:39:37 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.2ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (6.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1684ms (Views: 1680.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:39:47 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.4ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (6.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1662ms (Views: 1657.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:40:25 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.2ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (7.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 116ms (Views: 111.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:40:50 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (6.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1769ms (Views: 1765.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:41:04 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.3ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (7.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1679ms (Views: 1675.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:41:42 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (7.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1655ms (Views: 1651.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:41:54 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.2ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (6.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1714ms (Views: 1710.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:42:03 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (7.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1751ms (Views: 1747.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:48:52 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.3ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (7.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 128ms (Views: 124.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:49:32 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (5.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1719ms (Views: 1716.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:49:57 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.2ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (8.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 104ms (Views: 100.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:49:58 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (5.8ms)
+  [1m[35mCACHE (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 107ms (Views: 103.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:49:59 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.3ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (6.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 140ms (Views: 136.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:50:01 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.1ms)
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 110ms (Views: 108.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:50:27 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1776ms (Views: 1774.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:50:28 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 108ms (Views: 106.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:50:52 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.4ms)
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1666ms (Views: 1664.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:51:23 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.1ms)
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 131ms (Views: 130.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:51:58 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.1ms)
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1714ms (Views: 1712.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:52:13 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.3ms)
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1742ms (Views: 1739.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:53:00 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1687ms (Views: 1685.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 11:53:18 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1727ms (Views: 1725.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-09-12 11:53:24 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.3ms)
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 126ms (Views: 124.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:53:25 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (3.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 113ms (Views: 110.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:53:34 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (2.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1664ms (Views: 1661.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:53:50 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (3.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1665ms (Views: 1662.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:54:19 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (2.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1757ms (Views: 1751.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:55:24 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (2.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1681ms (Views: 1678.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:55:41 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (3.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1797ms (Views: 1793.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:56:56 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mEntry Load (0.3ms)[0m  SELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (3.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 116ms (Views: 113.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:57:07 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (2.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1912ms (Views: 1909.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:57:21 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (2.9ms)
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1653ms (Views: 1650.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 11:57:22 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (3.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 118ms (Views: 113.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:57:32 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (7.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 102ms (Views: 98.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:57:49 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.2ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (6.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1693ms (Views: 1690.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:58:46 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (6.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1732ms (Views: 1728.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:59:31 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.2ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (8.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1606ms (Views: 1602.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 11:59:43 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.3ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (6.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1742ms (Views: 1738.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 12:00:39 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.3ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (5.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1634ms (Views: 1630.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 12:01:01 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (6.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1688ms (Views: 1684.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 12:01:16 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.3ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (6.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1752ms (Views: 1748.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 12:02:55 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (7.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1659ms (Views: 1654.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 12:03:07 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.2ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (6.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1681ms (Views: 1677.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 12:03:18 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (6.5ms)
+  [1m[35mCACHE (0.1ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1690ms (Views: 1686.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 12:03:59 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[35mEntry Load (0.3ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (7.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 1688ms (Views: 1683.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/7/entries/3" for 127.0.0.1 at 2014-09-12 12:07:48 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"3"}
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (8.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1683ms (Views: 1679.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 12:12:26 -0700
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 109ms (Views: 107.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 12:12:27 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1[0m  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (4.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 105ms (Views: 101.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/7/entries/new" for 127.0.0.1 at 2014-09-12 12:12:30 -0700
+Processing by EntriesController#new as HTML
+  Parameters: {"user_id"=>"7"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  Rendered layouts/_errors.html.erb (0.0ms)
+  Rendered entries/new.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 105ms (Views: 102.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users/7/entries" for 127.0.0.1 at 2014-09-12 12:13:11 -0700
+Processing by EntriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/mhP3PcKtsp0LUXKvXjYX/VDGPwDLozIEiaiueecBtI=", "entry"=>{"title"=>"Friday", "content"=>"Today is Friday and I'm working on my assessment. I am sitting on the couch next to Ellen and Amy. Aoede came over to ask Amy a question about the merge. I do not have an interview today."}, "commit"=>"Publish Entry", "user_id"=>"7"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "entries" ("content", "created_at", "title", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["content", "Today is Friday and I'm working on my assessment. I am sitting on the couch next to Ellen and Amy. Aoede came over to ask Amy a question about the merge. I do not have an interview today."], ["created_at", "2014-09-12 19:13:11.122357"], ["title", "Friday"], ["updated_at", "2014-09-12 19:13:11.122357"], ["user_id", 7]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users/7
+Completed 302 Found in 15ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 12:13:11 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1[0m  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (3.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 104ms (Views: 101.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/7/entries/4" for 127.0.0.1 at 2014-09-12 12:13:12 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"4"}
+  [1m[35mEntry Load (0.2ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 4]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (6.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 111ms (Views: 108.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/7/entries/4" for 127.0.0.1 at 2014-09-12 12:13:32 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"4"}
+  [1m[35mEntry Load (0.2ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 4]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (4.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1651ms (Views: 1648.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/7/entries/4" for 127.0.0.1 at 2014-09-12 12:13:43 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"4"}
+  [1m[35mEntry Load (0.2ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 4]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (4.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1578ms (Views: 1574.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/7/entries/4" for 127.0.0.1 at 2014-09-12 12:13:55 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"4"}
+  [1m[35mEntry Load (0.3ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 4]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (5.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 1594ms (Views: 1591.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2014-09-12 12:14:09 -0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/mhP3PcKtsp0LUXKvXjYX/VDGPwDLozIEiaiueecBtI=", "comment"=>{"text"=>"holy cow, what a great entry. So inspiring.", "entry_id"=>"4"}, "commit"=>"Submit Comment"}
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "comments" ("created_at", "entry_id", "text", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["created_at", "2014-09-12 19:14:09.115313"], ["entry_id", 4], ["text", "holy cow, what a great entry. So inspiring."], ["updated_at", "2014-09-12 19:14:09.115313"], ["user_id", 7]]
+  [1m[35m (7.7ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 8.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 12:14:09 -0700
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (1.4ms)
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 98ms (Views: 96.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/7" for 127.0.0.1 at 2014-09-12 12:14:10 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1  [["user_id", 7]]
+  Rendered users/show.html.erb within layouts/application (3.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 98ms (Views: 95.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/7/entries/4" for 127.0.0.1 at 2014-09-12 12:14:11 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"4"}
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1[0m  [["entry_id", 4]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (6.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 114ms (Views: 110.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/7/entries/4" for 127.0.0.1 at 2014-09-12 12:15:11 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"4"}
+  [1m[35mEntry Load (0.1ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 4]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  Rendered entries/show.html.erb within layouts/application (16.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+Completed 200 OK in 134ms (Views: 112.9ms | ActiveRecord: 5.6ms)
+
+
+Started POST "/comments" for 127.0.0.1 at 2014-09-12 12:15:16 -0700
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/mhP3PcKtsp0LUXKvXjYX/VDGPwDLozIEiaiueecBtI=", "comment"=>{"text"=>"This is a new comment.", "entry_id"=>"4"}, "commit"=>"Submit Comment"}
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "comments" ("created_at", "entry_id", "text", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["created_at", "2014-09-12 19:15:16.956757"], ["entry_id", 4], ["text", "This is a new comment."], ["updated_at", "2014-09-12 19:15:16.956757"], ["user_id", 7]]
+  [1m[36m (8.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1[0m  [["id", 4]]
+Redirected to http://localhost:3000/users/7/entries/4
+Completed 302 Found in 18ms (ActiveRecord: 9.8ms)
+
+
+Started GET "/users/7/entries/4" for 127.0.0.1 at 2014-09-12 12:15:16 -0700
+Processing by EntriesController#show as HTML
+  Parameters: {"user_id"=>"7", "id"=>"4"}
+  [1m[35mEntry Load (0.2ms)[0m  SELECT  "entries".* FROM "entries"  WHERE "entries"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"  WHERE "comments"."entry_id" = $1  [["entry_id", 4]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  Rendered entries/show.html.erb within layouts/application (7.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 113ms (Views: 109.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 12:15:57 -0700
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (5.2ms)
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 115ms (Views: 109.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users/4" for 127.0.0.1 at 2014-09-12 12:15:58 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1[0m  [["user_id", 4]]
+  Rendered users/show.html.erb within layouts/application (2.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 108ms (Views: 99.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-09-12 12:16:00 -0700
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (1.9ms)
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 103ms (Views: 100.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2014-09-12 12:16:01 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1[0m  [["user_id", 6]]
+  Rendered users/show.html.erb within layouts/application (7.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 112ms (Views: 109.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/users/6" for 127.0.0.1 at 2014-09-12 12:30:20 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mEntry Load (0.1ms)[0m  [1mSELECT "entries".* FROM "entries"  WHERE "entries"."user_id" = $1[0m  [["user_id", 6]]
+  Rendered users/show.html.erb within layouts/application (9.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."id" = 7 LIMIT 1[0m
+Completed 200 OK in 127ms (Views: 111.0ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-09-12 13:27:57 -0700
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-12 13:27:58 -0700
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 106ms (Views: 100.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-09-12 13:27:59 -0700
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 129ms (Views: 128.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-12 13:28:08 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/mhP3PcKtsp0LUXKvXjYX/VDGPwDLozIEiaiueecBtI=", "user"=>{"name"=>"MEGHANAWESOMECOOL", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."name" = 'MEGHANAWESOMECOOL' LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered users/new.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 203ms (Views: 115.1ms | ActiveRecord: 1.0ms)
