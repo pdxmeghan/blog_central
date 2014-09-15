@@ -1,10 +1,6 @@
 class CommentsController < ApplicationController
   before_filter :authorize, only: [:edit, :update, :destroy]
 
-  def new
-    @comment = Comment.new
-  end
-
   def create
     @comment = Comment.new(comment_params)
     if @comment.save

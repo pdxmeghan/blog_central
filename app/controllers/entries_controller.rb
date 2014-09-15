@@ -11,6 +11,7 @@ class EntriesController < ApplicationController
     @entry = Entry.new(entry_params)
     if @entry.save
       session[:entry_id] = @entry.id
+      flash[:notice] = "#{@entry.title} has been created!"
       redirect_to user_path(@user)
     else
       render 'new'

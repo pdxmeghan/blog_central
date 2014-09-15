@@ -8,11 +8,11 @@ Rails.application.routes.draw do
 
   resources :users do
     resources :entries do
-      resources :comments
+      resources :comments, only: [:create]
     end
   end
 
-  resources :comments
+  resources :comments, only: [:edit, :update, :destroy]
 
   resources :sessions
 end
