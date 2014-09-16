@@ -7,7 +7,8 @@ class CommentsController < ApplicationController
       session[:comment_id] = @comment.id
       redirect_to user_entry_path(@comment.user, @comment.entry)
     else
-      render 'new'
+      flash[:notice] = "Sorry, comment field must be filled in"
+      redirect_to user_entry_path(@comment.user, @comment.entry)
     end
   end
 

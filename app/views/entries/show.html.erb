@@ -21,7 +21,7 @@
 <% if current_user %>
   <%= form_for [@user, @entry, @comment] do |f| %>
     <div class = "field">
-      <%= f.label "Comment:" %>
+      <%= f.label "Comment" %>
       <br>
       <%= f.text_area :text %>
     </div>
