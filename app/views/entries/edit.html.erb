@@ -1,7 +1,8 @@
 <h1>Edit <%= @entry.title %></h1>
 <br>
-<%= form_for [@user, @entry] do |f| %>
 <%= render('layouts/errors', :object => @entry) %>
+
+<%= form_for [@user, @entry] do |f| %>
   <div class="field">
     <%= f.label :title %><br />
     <%= f.text_field :title %>
