@@ -1,26 +1,7 @@
 require 'rails_helper'
 
-describe "editing and deleting a blog entry" do
-  it "will edit a blog entry" do
-    user = User.create(:name => "Friend", :password => '123')
-    visit '/login'
-    fill_in 'Name', :with => 'Friend'
-    fill_in 'password', :with => '123'
-    click_button 'Log In'
-    click_link "#{user.name}"
-    click_link 'Create New Entry'
-    fill_in 'Title', :with => 'hey'
-    fill_in 'Content', :with => 'yo'
-    click_button 'Publish Entry'
-    entry = Entry.create(:title => 'hey', :content => 'yo')
-    visit "/users/#{user.id}"
-    click_link 'hey'
-    click_link 'Edit Entry'
-    fill_in 'Content', :with => 'oh yeah'
-    expect(page).to have_content "oh yeah"
-  end
-
-  it "will not edit a blog entry with blank fields" do
+describe "Editng and deleting comments" do
+  it "should edit a comment" do
     user = User.create(:name => "Friend", :password => '123')
     visit '/login'
     fill_in 'Name', :with => 'Friend'
@@ -32,15 +13,15 @@ describe "editing and deleting a blog entry" do
     fill_in 'Content', :with => 'yo'
     click_button 'Publish Entry'
     entry = Entry.create!(:title => 'hey', :content => 'yo')
-    visit "/users/#{user.id}"
-    click_link 'hey'
-    click_link 'Edit Entry'
-    fill_in 'Content', :with => ''
     visit "/users/#{user.id}/entries/#{entry.id}"
-    expect(page).to have_content "yo"
+    fill_in "Comment", :with => "Cool"
+    click_button "Submit Comment"
+    click_link "Edit"
+    fill_in "Comment", :with => "Rad"
+    expect(page).to have_content "Rad"
   end
 
-  it "will delete a blog entry" do
+  it "shouldn't edit a comment with a blank field" do
     user = User.create(:name => "Friend", :password => '123')
     visit '/login'
     fill_in 'Name', :with => 'Friend'
@@ -52,10 +33,31 @@ describe "editing and deleting a blog entry" do
     fill_in 'Content', :with => 'yo'
     click_button 'Publish Entry'
     entry = Entry.create!(:title => 'hey', :content => 'yo')
-    visit "/users/#{user.id}"
-    click_link 'hey'
-    click_link 'Delete Entry'
-    visit "/users/#{user.id}"
+    visit "/users/#{user.id}/entries/#{entry.id}"
+    fill_in "Comment", :with => "Cool"
+    click_button "Submit Comment"
+    click_link "Edit"
+    fill_in "Comment", :with => " "
+    expect(page).to have_content "Comment field can't be blank"
+  end
+
+  it "should delete a comment" do
+    user = User.create(:name => "Friend", :password => '123')
+    visit '/login'
+    fill_in 'Name', :with => 'Friend'
+    fill_in 'password', :with => '123'
+    click_button 'Log In'
+    click_link "#{user.name}"
+    click_link 'Create New Entry'
+    fill_in 'Title', :with => 'hey'
+    fill_in 'Content', :with => 'yo'
+    click_button 'Publish Entry'
+    entry = Entry.create!(:title => 'hey', :content => 'yo')
+    visit "/users/#{user.id}/entries/#{entry.id}"
+    fill_in "Comment", :with => "Cool"
+    click_button "Submit Comment"
+    click_link "Delete"
     expect(page).to have_content " "
   end
 end
+

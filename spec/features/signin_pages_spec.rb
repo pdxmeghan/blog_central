@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe "the signin process" do
   it "signs a user in who uses the right password" do
-    user = User.create!(:name => "Dustin", :password => 'password')
+    user = User.create(:name => "Dustin", :password => 'password')
     visit '/login'
     fill_in 'Name', :with => 'Dustin'
     fill_in 'Password', :with => 'password'

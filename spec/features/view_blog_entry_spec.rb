@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe "viewing a blog entry" do
   it "will show a blog page and its comments when clicked" do
-    user = User.create!(:name => "Friend", :password => '123')
+    user = User.create(:name => "Friend", :password => '123')
     visit '/login'
     fill_in 'Name', :with => 'Friend'
     fill_in 'password', :with => '123'

@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe "creating a new entry process" do
   it "creates a new entry when entering all fields" do
-    user = User.create!(:name => "Friend", :password => '123')
+    user = User.create(:name => "Friend", :password => '123')
     visit '/login'
     fill_in 'Name', :with => 'Friend'
     fill_in 'password', :with => '123'
@@ -18,7 +18,7 @@ describe "creating a new entry process" do
   end
 
   it "gives an error when a user doesn't complete the form" do
-    user = User.create!(:name => "Friend", :password => '123')
+    user = User.create(:name => "Friend", :password => '123')
     visit '/login'
     fill_in 'Name', :with => 'Friend'
     fill_in 'password', :with => '123'
