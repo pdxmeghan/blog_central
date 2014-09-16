@@ -51,6 +51,6 @@ class EntriesController < ApplicationController
 
 private
   def entry_params
-    params.require(:entry).permit(:title, :content).merge(:user_id => current_user.id)
+    params.require(:entry).permit(:title, :content, :entry_id).merge(:user_id => current_user.id)
   end
 end

@@ -19,7 +19,7 @@
 <br>
 <div class="comment-form">
 <% if current_user %>
-  <%= form_for @comment do |f| %>
+  <%= form_for [@user, @entry, @comment] do |f| %>
     <div class = "field">
       <%= f.label "Comment:" %>
       <br>
